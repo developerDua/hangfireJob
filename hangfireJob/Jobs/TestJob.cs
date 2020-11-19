@@ -10,7 +10,7 @@ namespace hangfireJob.Jobs
     public class TestJob : IJob
     {
         public string JobName => TestJob.JobId;
-        public static string JobId => "Test Job Name.";
+        public static string JobId => "Test Job Name";
         public TestJob()
         {
         }
