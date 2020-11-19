@@ -30,6 +30,7 @@ namespace hangfireJob.Jobs
        public void Init()
         {
             RecurringJob.AddOrUpdate(JobId,() => Run(), Cron.Minutely);
+        //    BackgroundJob.ContinueJobWith(JobId, () => Run());
         } 
 
         public void SendInvoiceMail(string userName)
